@@ -1,8 +1,19 @@
-main {
+body {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+main {
+    width: 50%;
+    display: flex;
     padding: 5rem;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+section {
+    padding: 1rem;
+    background-color: lightgray;
+    border-radius: 1rem;
 }
 
 h2 {
@@ -15,7 +26,28 @@ p {
     line-height: 2rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input {
+    width: 50%;
+}
+
+button {
+    margin-top: .5rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
 .resposta {
     font-weight: bold;
     font-size: 1.3rem;
-}
+} 
