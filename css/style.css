@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.resposta {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
