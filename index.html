@@ -73,10 +73,64 @@
                 f) 200
             </h3><br>
         </section>
+
+        <section>
+            <h2>Desafio Quatro:</h2><br>
+            <p>
+                Dois veículos (um carro e um caminhão) saem respectivamente de cidades opostas pela mesma rodovia. O carro de Ribeirão Preto em direção a Franca, a uma velocidade constante de 110 km/h e o caminhão de Franca em direção a Ribeirão Preto a uma velocidade constante de 80 km/h. Quando eles se cruzarem na rodovia, qual estará mais próximo a cidade de Ribeirão Preto? <br>
+                IMPORTANTE: <br>
+                
+                a) Considerar a distância de 100km entre a cidade de Ribeirão Preto <-> Franca. <br>
+                
+                b) Considerar 2 pedágios como obstáculo e que o caminhão leva 5 minutos a mais para passar em cada um deles e o carro possui tag de pedágio (Sem Parar). <br>
+                
+                c) Explique como chegou no resultado. <br>
+            </p><br>
+
+            <h3 class="resposta">Resposta: O carro e o caminhão estão na mesma distância de Ribeirão Preto.</h3><br>
+
+            <p>
+                Explicação:<br>
+
+                Primeiro temos que levar em consideração que o ponto de referência para os cálculos é Ribeirão Preto.<br>
+                Fórmula Carro:<br>
+                X1 = V1.t*<br><br>
+
+                Fórmula Caminhão:<br>
+                X2 = 100 – V2*t<br><br>
+                O tempo que o caminhão demora para chegar a Ribeirão Preto sem obstáculos é: <br>
+                t = 100km / 80km/h = 1,25h<br><br>
+                Mas o exercício nos fala que temos 2 pedágios e que em cada um o caminhão demora 5 min, ou seja, 5 min * 2 pedágios = 10 min ou 0,17 h. <br>
+                Então, o tempo total que o caminhão demora para chegar em Ribeirão Preto com os pedágios é de 0,17 h + 1,25 h = 1,42 h<br><br>
+
+                Com isso podemos calcular o V do caminhão: <br>
+
+                V2 = 100km / 1,42h = 70,6 km/h<br><br>
+
+                Sabendo esses valores vamos aplicar a fórmula para saber em que ponto o carro e o caminhão se encontram: <br>
+
+                Carro:  t = x1/v1<br>
+                Caminhão: t = (x2 -100) / -V2<br><br>
+
+                X1 = X2<br><br>
+
+                Então: <br><br>
+
+                X / V1 = (X -100) / -V2<br>
+                -V2*X = V1*X – V1 * 100km<br>
+                X = (V1 * 100km) / (V1 + V2)<br>
+                X = (110km/h * 100km) / (110km/h + 70,6km/h)<br>
+                X = 60,9 Km<br>
+                <br>
+                Ou seja, o caminhão e o carro vão se encontrar no quilômetro 60,9 tendo como referência Ribeirão Preto. Se eles estão em um mesmo ponto então ambos estão na mesma distância de Ribeirão Preto.
+
+            </p>
+        </section>
     </main>
     
 </body>
 <script src="./js/desafioUm.js"></script>
 <script src="./js/desafioDois.js"></script>
 <script src="./js/desafioTres.js"></script>
+<script src="./js/desafioQuatro.js"></script>
 </html>

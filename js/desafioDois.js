@@ -1,4 +1,4 @@
-// ------------------------------ Desafio Dois -------------------------------------------
+console.log("Desafio dois: Devemos informar um número no input da página para saber a resposta!");
 
 const RESPOSTA = document.getElementById("respostaDesafioDois");
 
